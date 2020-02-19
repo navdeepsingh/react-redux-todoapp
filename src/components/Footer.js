@@ -8,7 +8,7 @@ const Footer = () => (
     {', '}
     <FilterLink filter={VisibilityFilters.SHOW_ACTIVE}>Active</FilterLink>
     {', '}
-    Show: <FilterLink filter={VisibilityFilters.SHOW_COMPLETED}>Completed</FilterLink>
+    <FilterLink filter={VisibilityFilters.SHOW_COMPLETED}>Completed</FilterLink>
   </p>
 )
 
