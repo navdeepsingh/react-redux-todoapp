@@ -8,7 +8,6 @@ import {
 
 const { SHOW_ALL } = VisibilityFilters
 
-
 function todos(state = [], action) {
   switch (action.type) {
     case ADD_TODO:
