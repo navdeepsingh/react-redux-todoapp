@@ -10,11 +10,10 @@ let AddTodo = ({ dispatch }) => {
       <form
         onSubmit={e => {
           e.preventDefault()
-          if (!input.value.trim()) {
+          if (!input.current.value.trim()) {
             return;
           }
-          dispatch(addTodo(input.value))
-
+          dispatch(addTodo(input.current.value))
         }}>
         <input ref={input} />
         <button type="submit">Add Todo</button>
