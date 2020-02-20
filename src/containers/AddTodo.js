@@ -7,6 +7,7 @@ let AddTodo = ({ dispatch }) => {
 
   return (
     <div>
+      <h1>Todo App Using Redux</h1>
       <form
         onSubmit={e => {
           e.preventDefault()

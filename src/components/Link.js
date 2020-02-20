@@ -1,14 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-const Link = ({ active, children, onClick }) => (
+const Link = ({ active, children, onClick, filter }) => (
   <button
     onClick={onClick}
+    className={active ? 'active' : ''}
     disabled={active}
     style={{
       marginLeft: '4px'
     }}
   >
-    {children}
+    {children} : {filter}
   </button>
 )
 Link.propTypes = {
